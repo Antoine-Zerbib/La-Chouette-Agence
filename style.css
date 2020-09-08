@@ -1,3 +1,13 @@
+#citation{/* SEO -- modification de la citation pour ressembler à l'image */
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+
+div p{/* SEO -- Les textes en <p> du site mises en 1em pour une meilleure lisibilité et pour réduire le nombre de caractères par ligne en dessous de 70 pour le texte du bloc3 */
+    font-size:1em ;
+}
+
 body {
     margin: 0;
     padding: 0;
