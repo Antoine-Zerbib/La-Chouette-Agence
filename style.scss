@@ -2,11 +2,13 @@
     font-size: 1.5em;
     font-style: italic;
 }
-
-
-div p{/* SEO -- Les textes en <p> du site mises en 1em pour une meilleure lisibilité et pour réduire le nombre de caractères par ligne en dessous de 70 pour le texte du bloc3 */
+div p{/* SEO -- Les textes en <p> du site mises en 1em pour une meilleure lisibilité et réduire le nombre de caractères par ligne en dessous de 70 pour le texte du bloc3 */
     font-size:1em ;
 }
+/* Il y a des modifications de contrastes SEO vers les lignes 800 */
+
+/* -- FIN DES MODIFS SEO EN AMONT DU CODE -- */
+
 
 body {
     margin: 0;
@@ -780,18 +782,23 @@ h4 {
     background-color: #364577;
 }
 
-.bgc-atomic-tangerine {
-    background-color: #F3976C;
-}
+/* SEO -- changement de la couleur du background pour que le contraste rende le site plus accessible */
 
-.tc-white {
-    color: #F3976C!important;
-}
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #94360A /*#F3976C*/;
     color: #FFFFFF!important;
 }
+.bgc-atomic-tangerine {
+    background-color: #94360A /*#F3976C*/;
+}
+.tc-white {/* SEO -- changement de la couleur du background pour que le contraste rende le site plus accessible */
+    color: #FFFFFF!important;
+}
+
+
+
+
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
@@ -831,9 +838,12 @@ h4 {
     background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
+
+/* SEO -- Changement du background de bmp à png pour alléger/accélérer le site */
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.png") /*url("img/image-de-presentation.bmp")*/;
 }
+
 
 @media (max-width: 1024px) {
     .bloc {
