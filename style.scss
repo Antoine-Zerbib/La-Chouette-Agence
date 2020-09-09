@@ -1,13 +1,4 @@
-#citation{/* SEO -- modification de la citation pour ressembler à l'image */
-    font-size: 1.5em;
-    font-style: italic;
-}
-div p{/* SEO -- Les textes en <p> du site mises en 1em pour une meilleure lisibilité et réduire le nombre de caractères par ligne en dessous de 70 pour le texte du bloc3 */
-    font-size:1em ;
-}
-/* Il y a des modifications de contrastes SEO vers les lignes 800 */
-
-/* -- FIN DES MODIFS SEO EN AMONT DU CODE -- */
+// ON PEUT TROUVER LES MODIFICATIONS DU CODE POUR LE SEO GRACE A LA RECHERCHE : "-- SEO"
 
 
 body {
@@ -25,11 +16,14 @@ button {
     outline: none!important;
 }
 
+/* -- SEO -- afin de répondre à la Check-list du point num 4 --retrait de l'attribut "none" et donc les liens se soulignent quand on passe dessus */
 a:hover {
-    text-decoration: none;
+    /*text-decoration: none;*/
     cursor: pointer;
 }
 
+/* -- SEO -- afin de répondre à la Check-list du point num 4 --retrait de id="page-loading-blocs-notifaction" devenue obsolette car j'ai supprimé la div et en plus, elle avait un "z-index:100000" et selon la check-list la position hors-écran NE DOIT PAS être utilisée a seule fin de visibilité */
+/*
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -38,7 +32,7 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
-
+*/
 .bloc {
     width: 100%;
     clear: both;
@@ -516,13 +510,19 @@ button {
 .panel-rd .panel-footer {
     border-radius: 0 0 29px 29px;
 }
-
+/* -- SEO -- afin de répondre à la Check-list du point num 4 -- background couleur sur texte area*/
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    background-color:lightcyan;
+    transition: all .6s ease-in-out ;
+    &:focus{
+         background-color:white; 
+    }
 }
 
-.scrollToTop {
+/* -- SEO -- afin de répondre à la Check-list du point num 4 --retrait de class="scrollToTop" devenue obsolette car j'ai supprimé la div et en plus, elle avait un "z-index:500" et selon la check-list la position hors-écran NE DOIT PAS être utilisée a seule fin de visibilité */
+/*.scrollToTop {
     width: 40px;
     height: 40px;
     position: fixed;
@@ -541,6 +541,7 @@ button {
     font-size: 14px;
     opacity: 1;
 }
+*/
 
 a[data-lightbox] {
     position: relative;
@@ -678,6 +679,7 @@ a {
     font-size: 36px;
 }
 
+/* -- SEO -- code de la citation de Maxime Guibard */
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
@@ -688,9 +690,10 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
+/* -- SEO -- Les textes en <p> du site en 11px sont trop petits. Pour une meilleure lisibilité j'ai enlevé cet attribut et au passage réduit le nombre de caractères par ligne en dessous de 70 pour le texte du bloc3 */
+/*p {
     font-size: 11px;
-}
+}*/
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -710,10 +713,10 @@ p {
     font-size: 16px;
     font-weight: 700;
 }
-
+/* -- SEO -- augmentation des margins de 20px pour compenser l'espace perdu par la suppression du spam */
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 40px auto;
 }
 
 h2 {
@@ -782,9 +785,7 @@ h4 {
     background-color: #364577;
 }
 
-/* SEO -- changement de la couleur du background pour que le contraste rende le site plus accessible */
-
-
+/* -- SEO -- changement de la couleur du background pour que le contraste rende le site plus accessible */
 .btn-atomic-tangerine {
     background: #94360A /*#F3976C*/;
     color: #FFFFFF!important;
@@ -792,7 +793,8 @@ h4 {
 .bgc-atomic-tangerine {
     background-color: #94360A /*#F3976C*/;
 }
-.tc-white {/* SEO -- changement de la couleur du background pour que le contraste rende le site plus accessible */
+/* SEO -- changement de la couleur du texte pour que le contraste rende le site plus accessible */
+.tc-white {
     color: #FFFFFF!important;
 }
 
@@ -839,7 +841,7 @@ h4 {
 }
 
 
-/* SEO -- Changement du background de bmp à png pour alléger/accélérer le site */
+/* -- SEO -- Changement du background de bmp à png pour alléger/accélérer le site */
 .bg-presentation {
     background-image: url("img/image-de-presentation.png") /*url("img/image-de-presentation.bmp")*/;
 }
