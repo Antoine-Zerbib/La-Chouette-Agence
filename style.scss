@@ -1,5 +1,9 @@
 // ON PEUT TROUVER LES MODIFICATIONS DU CODE POUR LE SEO GRACE A LA RECHERCHE : "-- SEO"
 
+/* j'ai trouvé cette class sans code, je l'ai juste recrée car elle avait un bon effet visuel sur page2*/
+.text-center{
+    text-align: center;
+}
 
 body {
     margin: 0;
@@ -372,7 +376,8 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+/* augmente la right car le texte sort de la page*/
+        right: 90px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
