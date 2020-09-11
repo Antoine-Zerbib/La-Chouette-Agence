@@ -4,7 +4,12 @@
 .text-center{
     text-align: center;
 }
-
+/* réalignement du formulaire avec les labels et leurs zones de texte */
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;  
+}
 
 
 
