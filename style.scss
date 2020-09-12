@@ -1,16 +1,13 @@
 // ON PEUT TROUVER LES MODIFICATIONS DU CODE POUR LE SEO GRACE A LA RECHERCHE : "-- SEO"
 
-/* j'ai trouvé cette class sans code, je l'ai juste recrée car elle avait un bon effet visuel sur page2*/
-.text-center{
-    text-align: center;
-}
-/* réalignement du formulaire avec les labels et leurs zones de texte */
-.form-group{
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;  
-}
 
+/* design block form */
+#form_1{
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 255, .1);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0 1em;
+}
 
 
 body {
@@ -28,13 +25,13 @@ button {
     outline: none!important;
 }
 
-/* -- SEO -- afin de répondre à la Check-list du point num 4 --retrait de l'attribut "none" et donc les liens se soulignent quand on passe dessus */
+/* -- SEO -- afin de répondre à la Check-list du point num 4 - retrait de l'attribut "none" et donc les liens se soulignent quand on passe dessus */
 a:hover {
     /*text-decoration: none;*/
     cursor: pointer;
 }
 
-/* -- SEO -- afin de répondre à la Check-list du point num 4 --retrait de id="page-loading-blocs-notifaction" devenue obsolette car j'ai supprimé la div et en plus, elle avait un "z-index:100000" et selon la check-list la position hors-écran NE DOIT PAS être utilisée a seule fin de visibilité */
+/* -- SEO -- afin de répondre à la Check-list du point num 4 - retrait de id="page-loading-blocs-notifaction" devenue obsolette car j'ai supprimé la div et en plus, elle avait un "z-index:100000" et selon la check-list la position hors-écran NE DOIT PAS être utilisée a seule fin de visibilité */
 /*
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -523,7 +520,7 @@ button {
 .panel-rd .panel-footer {
     border-radius: 0 0 29px 29px;
 }
-/* -- SEO -- afin de répondre à la Check-list du point num 4 -- background couleur sur texte area*/
+/* -- SEO - afin de répondre à la Check-list du point num 4 - background couleur sur texte area*/
 .form-control {
     color:#9E9E9E;
     border-color: rgba(0, 0, 0, .1);
@@ -544,7 +541,7 @@ button {
 
 
 
-/* -- SEO -- afin de répondre à la Check-list du point num 4 --retrait de class="scrollToTop" devenue obsolette car j'ai supprimé la div et en plus, elle avait un "z-index:500" et selon la check-list la position hors-écran NE DOIT PAS être utilisée a seule fin de visibilité */
+/* -- SEO - afin de répondre à la Check-list du point num 4 - retrait de class="scrollToTop" devenue obsolette car j'ai supprimé la div et en plus, elle avait un "z-index:500" et selon la check-list la position hors-écran NE DOIT PAS être utilisée a seule fin de visibilité */
 /*.scrollToTop {
     width: 40px;
     height: 40px;
@@ -702,7 +699,7 @@ a {
     font-size: 36px;
 }
 
-/* -- SEO -- code de la citation de Maxime Guibard */
+/* -- SEO - code de la citation de Maxime Guibard */
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
@@ -713,7 +710,7 @@ a {
     margin: auto auto auto auto;
 }
 
-/* -- SEO -- Les textes en <p> du site en 11px sont trop petits. Pour une meilleure lisibilité j'ai enlevé cet attribut et au passage réduit le nombre de caractères par ligne en dessous de 70 pour le texte du bloc3 */
+/* -- SEO - Les textes en <p> du site en 11px sont trop petits. Pour une meilleure lisibilité j'ai enlevé cet attribut et au passage réduit le nombre de caractères par ligne en dessous de 70 pour le texte du bloc3 */
 /*p {
     font-size: 11px;
 }*/
@@ -736,7 +733,7 @@ a {
     font-size: 16px;
     font-weight: 700;
 }
-/* -- SEO -- augmentation des margins de 20px pour compenser l'espace perdu par la suppression du spam */
+/* -- SEO - augmentation des margins de 20px pour compenser l'espace perdu par la suppression du spam */
 .social {
     max-width: 400px;
     margin: 40px auto;
@@ -762,6 +759,7 @@ h3 {
 
 h1 {
     color: #333333!important;
+    background: none;
 }
 
 h4 {
@@ -776,9 +774,10 @@ h4 {
 .white {
     color: #FFFFFF!important;
 }
-
+/* recentrage des images réduites avec "margin: auto"*/
 .portfolio-thumb {
-    margin-bottom: 24px;
+    margin: 0 auto 24px auto;
+    
 }
 
 .portfolio-row {
@@ -808,7 +807,7 @@ h4 {
     background-color: #364577;
 }
 
-/* -- SEO -- changement de la couleur du background pour que le contraste rende le site plus accessible */
+/* -- SEO - changement de la couleur du background pour que le contraste rende le site plus accessible */
 .btn-atomic-tangerine {
     background: #94360A /*#F3976C*/;
     color: #FFFFFF!important;
@@ -816,7 +815,7 @@ h4 {
 .bgc-atomic-tangerine {
     background-color: #94360A /*#F3976C*/;
 }
-/* SEO -- changement de la couleur du texte pour que le contraste rende le site plus accessible */
+/* -- SEO - changement de la couleur du texte pour que le contraste rende le site plus accessible */
 .tc-white {
     color: #FFFFFF!important;
 }
@@ -864,7 +863,7 @@ h4 {
 }
 
 
-/* -- SEO -- Changement du background de bmp à png pour alléger/accélérer le site */
+/* -- SEO - Changement du background de bmp à png pour alléger/accélérer le site */
 .bg-presentation {
     background-image: url("img/image-de-presentation.png") /*url("img/image-de-presentation.bmp")*/;
 }

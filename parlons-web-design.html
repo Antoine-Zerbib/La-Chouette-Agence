@@ -10,18 +10,20 @@
     <meta name="description" content="La chouette agenge redonne vie à votre projet, contactez-nous !">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+<!-- j'ai remarqué des incohérences (".min") dans les liens que j'ai corrigé -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style-compressed.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
 <!-- SEO - maj defer -->
-	<script src="./js/jquery-2.1.0.min.js" defer></script>
-	<script src="./js/bootstrap.min.js" defer></script>
-	<script src="./js/blocs.min.js" defer></script>
+<!-- j'ai remarqué des incohérences de source que j'ai corrigé (".min")-->
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jqBootstrapValidation.js" defer></script>
 	<script src="./js/formHandler.js" defer></script>
+    <script src="./js/jquery.touchSwipe.js" defer></script>
     
 <!-- SEO - Changement du titre -->
     <title>Parlons web design !</title>
@@ -37,14 +39,14 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<!-- SEO_afin de répondre à la Check-list du point num 4_point de repère Aria pour la structure du site (HEADER)-->
+<!-- SEO - afin de répondre à la Check-list du point num 4 - point de repère Aria pour la structure du site (HEADER)-->
 <header class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-<!-- SEO_afin de répondre à la Check-list du point num 4_Modification du alt avec keyword dedans -->
+<!-- SEO - afin de répondre à la Check-list du point num 4 - Modification du alt avec keyword dedans -->
 				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur Internet" height="40" /></a>
-<!-- SEO_boutton non utilisé 
+<!-- SEO - boutton non utilisé 
                     <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span> <span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -55,7 +57,7 @@
 					<li>
 						<a href="index.html">Accueil</a>
                     </li>
-<!-- SEO_afin de répondre à la Check-list du point num 4_ce lien renvoie sur la page actuelle alors le l'ai supprimé car cela ne sert a rien
+<!-- SEO - afin de répondre à la Check-list du point num 4 - ce lien renvoie sur la page actuelle alors le l'ai supprimé car cela ne sert a rien
 					<li>
 
 						<a href="parlons-web-design.html">Parlons web design</a>
@@ -69,7 +71,7 @@
 <!-- bloc-0 END -->
 
 <!-- bloc-6 -->
-<!-- SEO_afin de répondre à la Check-list du point num 4_point de repère Aria pour la structure du site (SECTION)-->
+<!-- SEO - afin de répondre à la Check-list du point num 4 - point de repère Aria pour la structure du site (SECTION)-->
 <section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 	<div class="container bloc-lg">
 		<div class="row">
@@ -88,21 +90,21 @@
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
-<!-- SEO_afin de répondre à la Check-list du point num 4_point de repère Aria pour la structure du site (SECTION)-->
+<!-- SEO - afin de répondre à la Check-list du point num 4 - point de repère Aria pour la structure du site (SECTION)-->
 <section class="bloc bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-<!-- CORRECTIONS W3C_h2 manquant -->
-                <h2>Contactez notre agence et sublimez votre site web !</h2>
-<!-- CORRECTIONS W3C_suppression des "success-msg et fail-msg, apparemment ce genre de chose se fait sous php ou javascript (que je ne connais pas encore)-->
-				<form id="form_1" novalidate>
-<!-- SEO_afin de répondre à la Check-list du point num 4_liaison des labels avec les inputs-->
+<!-- CORRECTIONS W3C - h2 manquant -->
+                <h2 class="text-center">Contactez notre agence et sublimez votre site web !</h2>
+<!-- CORRECTIONS W3C - suppression des "success-msg et fail-msg, apparemment ce genre de chose se fait sous php ou javascript (que je ne connais pas encore)-->
+				<form id="form_1" novalidate >
+<!-- SEO - afin de répondre à la Check-list du point num 4 - liaison des labels avec les inputs-->
 					<div class="form-group">
 						<label for="name">
 							Nom
 						</label>
-						<input id="name" name="name" class="form-control" type="text" required value="ex : Jean Darmeri"/>
+						<input id="name" name="name" class="form-control" type="text" required value="ex : Jean Darmerie"/>
 					</div>
 					<div class="form-group">
 						<label for="email">
@@ -114,13 +116,13 @@
 						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" name="input_504" type="text" required id="input_504" value="ex : par des amis"/>
+						<input class="form-control" name="input_504" type="text" required id="input_504" value="ex : Grâce à des amis"/>
 					</div>
 					<div class="form-group">
 						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label>
-                        <textarea id="message" name="message" class="form-control" rows="4" cols="50" required>ex : Je voudrais que mon site web qui ait un meilleur référencement.</textarea>
+                        <textarea id="message" name="message" class="form-control" rows="4" cols="50" required>ex : Je souhaiterai que mon site web ait un meilleur référencement.</textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -128,7 +130,7 @@
 				</form>
 			</div>
 			<div class="col-sm-6">
-				<p>
+				<p class="text-center">
 					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 				</p>
 			</div>
@@ -143,7 +145,7 @@
 
 
 <!-- Footer - bloc-8 -->
-<!-- SEO_afin de répondre à la Check-list du point num 4_point de repère Aria pour la structure du site (FOOTER)-->
+<!-- SEO - afin de répondre à la Check-list du point num 4 - point de repère Aria pour la structure du site (FOOTER)-->
 
 <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
@@ -153,7 +155,7 @@
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
-<!-- SEO_afin de répondre à la Check-list du point num 4_les liens ne renvoie plus vers la page d'accueil, mais vers des sites pertinents pour éviter le spam googlebot avec ajout d'alt comprenant un synonyme keyword -->
+<!-- SEO - afin de répondre à la Check-list du point num 4 - les liens ne renvoie plus vers la page d'accueil, mais vers des sites pertinents pour éviter le spam googlebot avec ajout d'alt comprenant un synonyme keyword -->
 					<div class="col-sm-3">
 						<div class="text-center">
 							<a class="social" href="twitter.com" ><span class="fa fa-twitter icon-md"></span></a>
