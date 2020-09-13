@@ -522,13 +522,13 @@ button {
 }
 /* -- SEO - afin de répondre à la Check-list du point num 4 - background couleur sur texte area*/
 .form-control {
-    color:#9E9E9E;
+    color:#6B6B6B;
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
-    background-color:lightcyan;
+    
     transition: all .4s ease-in-out ;
     &:focus{
-        background-color:white;
+        background-color:lightcyan;
         color:#575757;
     }
     &:not(:focus):invalid {
@@ -931,6 +931,7 @@ h4 {
         display: block;
         width: 100%;
     }
+    
  /* -- W3C - erreur de code à cause de "constant(safe-area-inset-left&right)"*/
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
